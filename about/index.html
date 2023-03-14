@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    
+<meta charset="utf-8" >
+
+<title>关于 | 九多壹</title>
+<meta name="description" content="阅读别人的故事，分享自己的人生。">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://www.9doe.com/favicon.ico?v=1678784687760">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://www.9doe.com/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://www.9doe.com">
+        <img class="avatar" src="https://www.9doe.com/images/avatar.png?v=1678784687760" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://www.9doe.com">
+        <h1 class="site-title">九多壹</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+        <div class="post-detail">
+          
+          <h2 class="post-title">关于</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2023-03-14</span>
+            
+          </div>
+          <div class="post-content" v-pre>
+            <blockquote>
+<p>欢迎来到我的小站呀，很高兴遇见你！🤝<br>
+我是戚小懿，这里是我的自我介绍，相信这个页面的信息会让你了解我。</p>
+</blockquote>
+<h2 id="关于本站">🏠 关于本站</h2>
+<p>这里是九多壹，偏居一偶的博客，如果你能来到，证明我们很有缘分，这里记录着我的生活生活、心情、知识、笔记、创意（还未有）</p>
+<h2 id="博主是谁">👨‍💻 博主是谁</h2>
+<p>戚小懿，男，90后，已婚，汉族，现居广东深圳，物流业从业者。</p>
+<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
+<p>喜欢科幻电影，科幻小说，现在在读心理学书籍，希望突破自我，寻找真我。</p>
+<h2 id="联系我呀">📬 联系我呀</h2>
+<p>邮箱：<em>xi<span style="display:none">@</span>yizi@<span style="display:none">@</span>9<span style="display:none">@</span>doe.com</em></li><br>
+微信&amp;企鹅：<em>10667527</em></p>
+
+          </div>
+        </div>
+
+        
+      </div>
+
+      
+        
+          <div id="gitalk-container"></div>
+        
+
+        
+      
+
+      <div class="site-footer">
+  <div class="slogan">阅读别人的故事，分享自己的人生。</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://www.9doe.com/atom.xml" target="_blank">RSS</a>
+</div>
+
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '32e6d74014fb9be36f38',
+        clientSecret: 'ef95a17dbb04bfadcb178f1f58e3a6060be21316',
+        repo: 'iqiyee.github.io',
+        owner: 'iqiyee',
+        admin: ['iqiyee'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>

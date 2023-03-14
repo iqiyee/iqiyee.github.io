@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    
+<meta charset="utf-8" >
+
+<title>我到底为了什么写博客？ | 九多壹</title>
+<meta name="description" content="阅读别人的故事，分享自己的人生。">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://www.9doe.com/favicon.ico?v=1678784687760">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://www.9doe.com/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://www.9doe.com">
+        <img class="avatar" src="https://www.9doe.com/images/avatar.png?v=1678784687760" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://www.9doe.com">
+        <h1 class="site-title">九多壹</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+        <div class="post-detail">
+          
+            <div class="feature-container" style="background-image: url('https://www.9doe.com/post-images/hello-gridea.png')">
+            </div>
+          
+          <h2 class="post-title">我到底为了什么写博客？</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2023-03-14</span>
+            
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://www.9doe.com/tag/7fehv-R5Q/">
+                    Gridea
+                    
+                  </a>
+                
+              </span>
+            
+          </div>
+          <div class="post-content" v-pre>
+            <p>✍️  建立博客初心就是写东西，本来只是想记录下我的生活、心情、知识、笔记、创意... ... 然而，却迷失在主题、功能、代码之中……</p>
+<!-- more -->
+<h2 id="我到底为了什么写博客">我到底为了什么写博客？</h2>
+<p>这个问题我已经想了好久了，我建博客是为了什么，似乎之前一直都是在折腾主题、优化、主机等……却忘记了博客的初心：<strong>写！</strong></p>
+<p>这个域名是2011年注册的，到现在12年了，可是到现在这个博客仍然没有超过五篇文章，有点讽刺。服务器3年前到期了，没有继续续费；所以域名备案去年阿里云给注销了，七牛云去年7月份也给停了。似乎我再也不会折腾了，但是我舍不得这个域名，虽然不咋地。</p>
+<p>婚后有了孩子，重心也随之放在家庭和工作上了，每天过的生活可以称之为鸡飞狗跳的，在职场上与领导与客户“相互博弈”，在家与孩子“斗智斗勇”，时间它不允许我有过多的爱好。但我在夜深人静的时候就在想，我来这人间一趟，总得留点什么吧。亦或者等我老了，我可以翻看下现在写的东西，老年生活也不会那么枯燥了呢。</p>
+<p>其实很可惜，那些年的记录丢的丢，损坏的损坏，基本没留下了。但既然没留下那就随它吧，此时此刻，我又重新上路开始了！</p>
+<h2 id="使用grideagithub-pages写博客">使用Gridea+𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌写博客</h2>
+<p>有一段时间，我用七牛搭建了纯html页面的博客，但是后来也不了了之，到现在，我看到了有人说利用github写博客，我的心情又激动起来了，但是在网上找了一堆教程都是Hexo 、Jekyll 等程序，来来回回折腾了几天，我都快放弃了，后来不死心，在bing上搜索“<strong>静态博客写作器</strong>”，竟然被我找到了宝贝，就是Gridea，下面是官方介绍：</p>
+<blockquote>
+<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作<br>
+🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片<br>
+🏷️  你可以对文章进行标签分组<br>
+📋  你可以自定义菜单，甚至可以创建外部链接菜单<br>
+💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端<br>
+🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台<br>
+🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力<br>
+官方下载链接：<a href="https://open.gridea.dev/">Gridea 主页</a></p>
+</blockquote>
+<p>这不是就是我想要的嘛！😍不用考虑代码，不用关心服务器（托管在𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌），仅需一个域名即可。我尝试了部署了下，半个小时折腾好了（主要还是因为我没梯子，Github的速度你懂的😂）</p>
+<p>第一次使用他需要你进行应用的初始化配置，才能让他和 Github Pages 连接。配置很简单，可以参考下面的方法进行配置：<br>
+<img src="https://www.9doe.com/post-images/1678783179498.png" alt="" loading="lazy"></p>
+<blockquote>
+<p>域名：Github Pages 对应的域名（例如：https://iqiyee.github.io）<br>
+仓库名称：你的静态文件存放的仓库（例如：iqiyee.github.io）<br>
+分支：你的 Github Pages 对应的分支（例如：main）<br>
+用户名：仓库所属用户的用户名（通常就是你的 Github 账号的昵称）<br>
+邮箱：Git 推送时使用的邮箱（通常就是你的 Github 账号的邮箱）<br>
+Token: Git 推送时需要的 Token，用来向 Github 提交构建后的文件 🔗<a href="https://github.com/settings/tokens">点此申请</a><br>
+CNAME: 可通过这个选项配置你自己的域名（例如：www.9doe.com）</p>
+</blockquote>
+<p>至此博客就已经搭建好了，你可以设置其他的包括评论、主题等等内容了，自带主题真的很精致漂亮，完全不用去找其他主题了，专注于“<strong>写</strong>”吧。</p>
+<p>emmm……我不该思考我为了什么写博客么，怎么变成了搭建博客了🤣</p>
+<p>😘 Enjoy~</p>
+
+          </div>
+        </div>
+
+        
+      </div>
+
+      
+        
+          <div id="gitalk-container"></div>
+        
+
+        
+      
+
+      <div class="site-footer">
+  <div class="slogan">阅读别人的故事，分享自己的人生。</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://www.9doe.com/atom.xml" target="_blank">RSS</a>
+</div>
+
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '32e6d74014fb9be36f38',
+        clientSecret: 'ef95a17dbb04bfadcb178f1f58e3a6060be21316',
+        repo: 'iqiyee.github.io',
+        owner: 'iqiyee',
+        admin: ['iqiyee'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>
